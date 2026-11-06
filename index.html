@@ -277,6 +277,14 @@ nav.tabs .wrap::-webkit-scrollbar { display: none; }
 .linkrow .mini { width: 56px; height: 56px; flex: none; }
 .linkrow .mini .look { padding: 3px; height: 100%; box-sizing: border-box; }
 .linkrow .mini .flatlay { height: 100%; max-height: none; }
+.watch { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 12px; }
+.watch > span { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-right: 2px; }
+.notes .watch a { display: inline-flex; align-items: center; gap: 5px; padding: 6px 11px; border: 1px solid var(--rule); border-radius: 999px; background: var(--surface); color: var(--fg); text-decoration: none; font-size: 13px; line-height: 1.2; }
+.notes .watch a::before { content: ""; width: 0; height: 0; border-left: 7px solid var(--accent); border-top: 4.5px solid transparent; border-bottom: 4.5px solid transparent; }
+.notes .watch a:hover { border-color: var(--accent); }
+.notes ul.words { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 4px 16px; font-size: 14px; margin-bottom: 10px; }
+.words li { display: flex; gap: 8px; flex-wrap: wrap; padding: 4px 0; border-bottom: 1px solid var(--rule); }
+.words li span { font-weight: 600; }
 .toast.top { bottom: auto; top: calc(14px + env(safe-area-inset-top, 0px)); }
 .othumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
 .othumb { appearance: none; font: inherit; color: inherit; text-align: left; cursor: pointer; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 8px; display: flex; flex-direction: column; gap: 6px; min-width: 0; content-visibility: auto; contain-intrinsic-size: auto 240px; }
@@ -406,7 +414,7 @@ details.fold > summary .small { font-weight: 400; }
   <div id="view-pieces" role="tabpanel" aria-labelledby="tab-pieces" hidden></div>
   <div id="view-outfits" role="tabpanel" aria-labelledby="tab-outfits" hidden></div>
   <div id="view-life" role="tabpanel" aria-labelledby="tab-life" hidden><div class="notes">
-      <p class="lede">Hair, makeup, skincare and everyday life, from what FUDGE has featured in 2025 and 2026. CLUÉL sticks almost entirely to clothes, so this side mostly comes from FUDGE.</p>
+      <p class="lede">Hair, makeup, skincare and everyday life, from what FUDGE has featured in 2025 and 2026. CLUÉL sticks almost entirely to clothes, so this side mostly comes from FUDGE. Plus shopping words and clothing care. The Watch links open a video search, in Japanese and in English.</p>
       <div>
         <h2>Hair</h2>
         <ul>
@@ -421,6 +429,7 @@ details.fold > summary .small { font-weight: 400; }
           <li><span lang="ja">シースルー前髪にしたいです。</span> (I'd like see-through bangs.)</li>
           <li><span lang="ja">カラーはせず、地毛のままでお願いします。</span> (No color, please. I'd like to keep my natural hair.)</li>
         </ul>
+        <div class="watch"><span>Watch</span><a href="https://www.youtube.com/results?search_query=%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%83%9C%E3%83%96%20%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0" target="_blank" rel="noopener">Styling a layered bob</a><a href="https://www.youtube.com/results?search_query=layered%20bob%20styling%20tutorial" target="_blank" rel="noopener">Layered bob (English)</a><a href="https://www.youtube.com/results?search_query=%E3%82%B7%E3%83%BC%E3%82%B9%E3%83%AB%E3%83%BC%E5%89%8D%E9%AB%AA%20%E4%BD%9C%E3%82%8A%E6%96%B9" target="_blank" rel="noopener">See-through bangs</a><a href="https://www.youtube.com/results?search_query=%E3%83%8F%E3%83%BC%E3%83%95%E3%82%A2%E3%83%83%E3%83%97%20%E7%B0%A1%E5%8D%98%20%E3%82%84%E3%82%8A%E6%96%B9" target="_blank" rel="noopener">Easy half-up</a><a href="https://www.youtube.com/results?search_query=easy%20low%20bun%20tutorial" target="_blank" rel="noopener">Easy low bun</a><a href="https://www.youtube.com/results?search_query=%E3%83%99%E3%83%AC%E3%83%BC%E5%B8%BD%20%E3%81%8B%E3%81%B6%E3%82%8A%E6%96%B9" target="_blank" rel="noopener">How to wear a beret</a></div>
       </div>
       <div>
         <h2>Makeup</h2>
@@ -433,6 +442,7 @@ details.fold > summary .small { font-weight: 400; }
           <li><b>Cheeks:</b> a soft peach or rose-brown, sheer and diffused, patted in with a finger or brushed lightly upward.</li>
           <li><b>Match the lip to the outfit</b>, the way FUDGE does: mocha with camel, chocolate, cream and the burgundy cardigan; a deeper rose brown with deep navy or the tartan; peach with denim and linen.</li>
         </ul>
+        <div class="watch"><span>Watch</span><a href="https://www.youtube.com/results?search_query=%E8%96%84%E8%86%9C%E3%83%84%E3%83%A4%E8%82%8C%20%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A1%E3%82%A4%E3%82%AF" target="_blank" rel="noopener">Thin, glowy base</a><a href="https://www.youtube.com/results?search_query=natural%20glowy%20skin%20makeup%20tutorial" target="_blank" rel="noopener">Glowy skin (English)</a><a href="https://www.youtube.com/results?search_query=%E3%81%B5%E3%81%95%E3%81%B5%E3%81%95%E7%9C%89%20%E6%8F%8F%E3%81%8D%E6%96%B9" target="_blank" rel="noopener">Fluffy brows</a><a href="https://www.youtube.com/results?search_query=fluffy%20brows%20tutorial" target="_blank" rel="noopener">Fluffy brows (English)</a><a href="https://www.youtube.com/results?search_query=%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%AA%E3%83%83%E3%83%97%20%E5%A1%97%E3%82%8A%E6%96%B9%20%E3%83%8A%E3%83%81%E3%83%A5%E3%83%A9%E3%83%AB" target="_blank" rel="noopener">Wearing a brown lip</a><a href="https://www.youtube.com/results?search_query=%E3%83%81%E3%83%BC%E3%82%AF%20%E5%85%A5%E3%82%8C%E6%96%B9%20%E3%81%B5%E3%82%93%E3%82%8F%E3%82%8A" target="_blank" rel="noopener">Soft blush</a></div>
       </div>
       <div>
         <h2>Skincare</h2>
@@ -445,6 +455,95 @@ details.fold > summary .small { font-weight: 400; }
           <li><b>Brighten and moisturize</b>, for example with vitamin C derivatives or plant oils.</li>
           <li><b>Prep before makeup</b> (<span lang="ja">プレベースメイク</span>) so a thin base looks smooth. This was one of 2025's big beauty words in Japan.</li>
         </ul>
+        <div class="watch"><span>Watch</span><a href="https://www.youtube.com/results?search_query=%E3%83%97%E3%83%AC%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A1%E3%82%A4%E3%82%AF%20%E3%82%84%E3%82%8A%E6%96%B9" target="_blank" rel="noopener">Prep before makeup</a><a href="https://www.youtube.com/results?search_query=skin%20prep%20before%20makeup" target="_blank" rel="noopener">Skin prep (English)</a><a href="https://www.youtube.com/results?search_query=%E6%97%A5%E7%84%BC%E3%81%91%E6%AD%A2%E3%82%81%20%E6%AD%A3%E3%81%97%E3%81%84%E5%A1%97%E3%82%8A%E6%96%B9" target="_blank" rel="noopener">Applying sunscreen</a><a href="https://www.youtube.com/results?search_query=how%20much%20sunscreen%20to%20apply%20face" target="_blank" rel="noopener">Sunscreen (English)</a></div>
+      </div>
+      <div>
+        <h2>Shopping words</h2>
+        <p>Words that help when you search Japanese listings or read a tag.</p>
+        <p class="small"><b>Fabrics</b> (<span lang="ja">素材</span>; the full makeup is <span lang="ja">組成</span>)</p>
+        <ul class="words">
+          <li><span lang="ja">綿・コットン</span> cotton</li>
+          <li><span lang="ja">麻・リネン</span> linen</li>
+          <li><span lang="ja">ウール</span> wool</li>
+          <li><span lang="ja">カシミヤ</span> cashmere</li>
+          <li><span lang="ja">ポリエステル</span> polyester</li>
+          <li><span lang="ja">アクリル</span> acrylic (pills easily)</li>
+          <li><span lang="ja">レーヨン</span> rayon</li>
+          <li><span lang="ja">ナイロン</span> nylon</li>
+          <li><span lang="ja">コーデュロイ</span> corduroy</li>
+          <li><span lang="ja">ツイル</span> twill</li>
+          <li><span lang="ja">ネル・フランネル</span> flannel</li>
+          <li><span lang="ja">ガーゼ</span> gauze</li>
+        </ul>
+        <p class="small muted">Look for <span lang="ja">綿100%</span> or <span lang="ja">麻100%</span>. <span lang="ja">混</span> means a blend, as in <span lang="ja">綿混</span> (cotton blend).</p>
+        <p class="small"><b>Pieces</b></p>
+        <ul class="words">
+          <li><span lang="ja">カバーオール・ワークジャケット</span> chore jacket</li>
+          <li><span lang="ja">シャツワンピース</span> shirt dress</li>
+          <li><span lang="ja">ジャンパースカート・ジャンスカ</span> pinafore</li>
+          <li><span lang="ja">サロペット</span> overalls</li>
+          <li><span lang="ja">ダッフルコート</span> duffle coat</li>
+          <li><span lang="ja">ニットベスト</span> sweater vest</li>
+          <li><span lang="ja">ジレ</span> sleeveless vest</li>
+          <li><span lang="ja">ケーブルニット・フィッシャーマン</span> cable or fisherman knit</li>
+          <li><span lang="ja">タートルネック・ハイネック</span> turtleneck, mock neck</li>
+          <li><span lang="ja">プリーツスカート</span> pleated skirt</li>
+          <li><span lang="ja">ワイドパンツ</span> wide-leg pants</li>
+          <li><span lang="ja">レースアップブーツ</span> lace-up boots</li>
+        </ul>
+        <p class="small"><b>Fit and length</b></p>
+        <ul class="words">
+          <li><span lang="ja">ゆったり</span> relaxed, roomy</li>
+          <li><span lang="ja">オーバーサイズ</span> oversized</li>
+          <li><span lang="ja">着丈・袖丈・総丈</span> body, sleeve and full length</li>
+          <li><span lang="ja">ショート丈</span> short</li>
+          <li><span lang="ja">ミモレ丈</span> mid-calf</li>
+          <li><span lang="ja">ロング丈・マキシ丈</span> long, maxi</li>
+          <li><span lang="ja">ウエストゴム</span> elastic waist</li>
+          <li><span lang="ja">裏地あり</span> lined</li>
+          <li><span lang="ja">透け感</span> sheer</li>
+          <li><span lang="ja">ストレッチ</span> stretch</li>
+        </ul>
+        <p class="small"><b>Colors, matched to the palette</b></p>
+        <ul class="words">
+          <li><span lang="ja">ブラウン・チョコ</span> Chocolate</li>
+          <li><span lang="ja">生成り・アイボリー・オフホワイト</span> Cream</li>
+          <li><span lang="ja">ベージュ</span> Beige</li>
+          <li><span lang="ja">キャメル</span> Camel</li>
+          <li><span lang="ja">ネイビー・ダークネイビー</span> Deep navy</li>
+          <li><span lang="ja">ブルー・インディゴ</span> Denim</li>
+          <li><span lang="ja">ブラック</span> Black</li>
+          <li><span lang="ja">テラコッタ・ブリック</span> Rust</li>
+          <li><span lang="ja">ボルドー・ワイン</span> Burgundy</li>
+          <li><span lang="ja">ダークグリーン</span> Forest green</li>
+          <li><span lang="ja">ティール・ブルーグリーン</span> Deep teal</li>
+          <li><span lang="ja">マスタード</span> Mustard</li>
+        </ul>
+        <p class="small muted">Watch out for <span lang="ja">オリーブ</span> and <span lang="ja">カーキ</span>, which are off-palette. <span lang="ja">サックス</span> is a pale blue.</p>
+        <p class="small"><b>Handy searches:</b> <span lang="ja">自宅で洗える</span> or <span lang="ja">ウォッシャブル</span> for washable at home, and <span lang="ja">古着</span> for secondhand.</p>
+        <p class="small"><b>In the shop:</b></p>
+        <ul class="small">
+          <li><span lang="ja">試着してもいいですか？</span> (May I try this on?)</li>
+          <li><span lang="ja">他の色はありますか？</span> (Do you have other colors?)</li>
+          <li><span lang="ja">別のサイズはありますか？</span> (Do you have another size?)</li>
+          <li><span lang="ja">素材は何ですか？</span> (What's it made of?)</li>
+          <li><span lang="ja">家で洗えますか？</span> (Can I wash it at home?)</li>
+          <li><span lang="ja">見ているだけです。</span> (I'm just looking.)</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Clothing care</h2>
+        <p>A capsule is worn often, so a little care keeps it looking good for years. Always check the care label first. Japanese labels use the same symbols as international ones.</p>
+        <ul>
+          <li><b>Knits:</b> wash by hand in cool water with a wool detergent (<span lang="ja">おしゃれ着洗い</span>), press the water out without wringing, and dry flat. Fold them instead of hanging. For pilling (<span lang="ja">毛玉</span>), use a fabric shaver or a sweater comb, and give knits a day of rest between wears.</li>
+          <li><b>Corduroy:</b> wash inside out on a gentle cycle. Smooth the ribs by hand while it's damp, and steam from the back instead of pressing it flat.</li>
+          <li><b>Linen:</b> wash gently and hang it while it's still damp. A few wrinkles are part of the look; iron while damp if you want it crisp.</li>
+          <li><b>Denim:</b> wash rarely, inside out and cold, and hang to dry so the color lasts.</li>
+          <li><b>The duffle coat:</b> brush it after wearing (<span lang="ja">ブラッシング</span>), air it out before putting it away, and store it on a wide hanger. Clean it the way its label says.</li>
+          <li><b>Leather shoes and bags:</b> wipe off dust, condition now and then, and stuff bags with paper to keep their shape. Rest shoes a day between wears and use shoe trees if you have them.</li>
+          <li><b>Nylon bags:</b> spot-clean with a damp cloth and a little mild soap.</li>
+        </ul>
+        <div class="watch"><span>Watch</span><a href="https://www.youtube.com/results?search_query=%E6%B4%97%E6%BF%AF%E8%A1%A8%E7%A4%BA%20%E8%A6%8B%E6%96%B9" target="_blank" rel="noopener">Reading care labels</a><a href="https://www.youtube.com/results?search_query=laundry%20symbols%20explained" target="_blank" rel="noopener">Care labels (English)</a><a href="https://www.youtube.com/results?search_query=%E3%82%BB%E3%83%BC%E3%82%BF%E3%83%BC%20%E6%89%8B%E6%B4%97%E3%81%84%20%E7%B8%AE%E3%81%BE%E3%81%AA%E3%81%84" target="_blank" rel="noopener">Hand-washing knits</a><a href="https://www.youtube.com/results?search_query=how%20to%20hand%20wash%20wool%20sweater" target="_blank" rel="noopener">Hand-washing knits (English)</a><a href="https://www.youtube.com/results?search_query=%E6%AF%9B%E7%8E%89%20%E5%8F%96%E3%82%8A%E6%96%B9%20%E3%82%BB%E3%83%BC%E3%82%BF%E3%83%BC" target="_blank" rel="noopener">Removing pilling</a><a href="https://www.youtube.com/results?search_query=%E3%82%B3%E3%83%BC%E3%83%87%E3%83%A5%E3%83%AD%E3%82%A4%20%E6%B4%97%E6%BF%AF" target="_blank" rel="noopener">Washing corduroy</a><a href="https://www.youtube.com/results?search_query=%E3%83%AA%E3%83%8D%E3%83%B3%20%E3%82%A2%E3%82%A4%E3%83%AD%E3%83%B3%20%E3%81%8B%E3%81%91%E6%96%B9" target="_blank" rel="noopener">Ironing linen</a><a href="https://www.youtube.com/results?search_query=%E3%82%B3%E3%83%BC%E3%83%88%20%E3%83%96%E3%83%A9%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%20%E3%82%84%E3%82%8A%E6%96%B9" target="_blank" rel="noopener">Brushing a coat</a><a href="https://www.youtube.com/results?search_query=%E9%9D%A9%E9%9D%B4%20%E6%89%8B%E5%85%A5%E3%82%8C%20%E5%88%9D%E5%BF%83%E8%80%85" target="_blank" rel="noopener">Leather shoe care</a><a href="https://www.youtube.com/results?search_query=leather%20bag%20care%20at%20home" target="_blank" rel="noopener">Leather bag care (English)</a></div>
       </div>
       <div>
         <h2>Living</h2>
