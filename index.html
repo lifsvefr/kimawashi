@@ -285,6 +285,9 @@ nav.tabs .wrap::-webkit-scrollbar { display: none; }
 .notes ul.words { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 4px 16px; font-size: 14px; margin-bottom: 10px; }
 .words li { display: flex; gap: 8px; flex-wrap: wrap; padding: 4px 0; border-bottom: 1px solid var(--rule); }
 .words li span { font-weight: 600; }
+/* wide screens: keep the reading column centered, and show the four seasons in one row */
+.notes { margin-inline: auto; }
+@media (min-width: 900px) { .look-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: none; } }
 .toast.top { bottom: auto; top: calc(14px + env(safe-area-inset-top, 0px)); }
 .othumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
 .othumb { appearance: none; font: inherit; color: inherit; text-align: left; cursor: pointer; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 8px; display: flex; flex-direction: column; gap: 6px; min-width: 0; content-visibility: auto; contain-intrinsic-size: auto 240px; }
