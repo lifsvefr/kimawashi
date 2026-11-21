@@ -915,11 +915,11 @@ TYPES.push(Object.assign({}, TYPE.sandals, { id: "twostrap", label: "Two-strap s
     P("M8.5 25 Q8.5 3 29 3 Q48.5 3 48.5 23 L47.6 46 Q46.6 68 43.6 83 Q40.6 97 30 97 Q19 97 16.6 85 Q13.6 70 12 52 Q9 40 8.5 25 Z", SOLE) +
     P("M12 25 Q12 6.6 29 6.6 Q45 6.6 45 23.4 L44.2 46 Q43.3 67 40.4 81.6 Q37.8 93.4 30 93.4 Q21.8 93.4 19.8 83.6 Q17 70 15.6 52 Q12.6 40 12 25 Z", BED) +
     soft("M19 15 Q29 11.4 39 15 M25 70 Q23.6 80 26.4 87") +
-    P("M9.4 21.6 Q29 17.6 48.2 21.6 L47.8 39.4 Q29 35.6 10.8 39.4 Z", F) +
-    P("M11 43.4 Q29 39.6 47.4 43.4 L46.9 61.2 Q29 57.4 12.6 61.2 Z", F) +
-    P("M3.4 23.4 L11.6 23.2 L11.6 37.6 L3.4 37.8 Z", F) + P("M5.8 26 L9.4 25.9 L9.4 35 L5.8 35.1 Z") + P("M7.6 26.2 L7.6 34.9") +
-    P("M5 45.2 L13.2 45 L13.2 59.4 L5 59.6 Z", F) + P("M7.4 47.8 L11 47.7 L11 56.8 L7.4 56.9 Z") + P("M9.2 48 L9.2 56.7") +
-    soft("M18 30.4 L18.4 31 M22 30 L22.4 30.6 M26 29.8 L26.4 30.4 M19.6 52 L20 52.6 M23.6 51.6 L24 52.2 M27.6 51.4 L28 52");
+    P("M5.8 22.2 Q29 17.6 48.2 21.6 L47.8 39.4 Q29 35.6 7 39.8 Z", F) +
+    P("M7.6 44 Q29 39.6 47.4 43.4 L46.9 61.2 Q29 57.4 9 61.6 Z", F) +
+    P("M10.4 23.2 L18.4 22.6 L18.6 37 L10.6 37.6 Z", F) + P("M12.8 25.7 L16.2 25.5 L16.4 34.4 L13 34.6 Z") + P("M14.5 25.6 L14.7 34.5") +
+    P("M12 45 L20 44.4 L20.2 58.8 L12.2 59.4 Z", F) + P("M14.4 47.5 L17.8 47.3 L18 56.2 L14.6 56.4 Z") + P("M16.1 47.4 L16.3 56.3") +
+    soft("M22 30 L22.4 30.6 M25.6 29.8 L26 30.4 M29.2 29.6 L29.6 30.2 M23.6 51.6 L24 52.2 M27.2 51.4 L27.6 52 M30.8 51.2 L31.2 51.8");
   return `${one}<g transform="translate(100 0) scale(-1 1)">${one}</g>`;
 } }));
 TYPE.twostrap = TYPES[TYPES.length - 1];
@@ -2063,7 +2063,7 @@ const REAL = {
   platforms: { w: 38 }, skate: { w: 36 }, tie: { h: 52 }, bow: { w: 20 }, brooch: { w: 14 }, headscarf: { h: 56 },
   beret: { w: 28 }, bucket: { w: 32 }, cap: { w: 30 }, scarf: { h: 70 }, socks: { h: 28 }, tights: { h: 52 }, belt: { w: 52 }, necklace: { h: 26 }, watch: { h: 22 }, glasses: { w: 15 }, umbrella: { h: 62 }, beanie: { w: 24 }, sunhat: { w: 42 }, hairclip: { w: 14 }, gloves: { h: 26 }, earrings: { w: 14 }, sunglasses: { w: 15 }, bandana: { w: 42 }
 };
-Object.assign(BBOX, {"tote":[18,4,64,92],"gathered":[20,18,60,75],"watch":[15,12,69,76],"socks":[14,18,73.6,59.6],"loafers":[7,38,82,48],"teedress":[24.6,4,50.8,94],"canvastote":[22,10,56,82],"twostrap":[3.4,3,93.2,94]});
+Object.assign(BBOX, {"tote":[18,4,64,92],"gathered":[20,18,60,75],"watch":[15,12,69,76],"socks":[14,18,73.6,59.6],"loafers":[7,38,82,48],"teedress":[24.6,4,50.8,94],"canvastote":[22,10,56,82],"twostrap":[5.8,3,88.4,94]});
 Object.assign(REAL, { watch: { w: 30 }, socks: { w: 30 }, teedress: { h: 112 }, canvastote: { h: 56 }, twostrap: { h: 26 } });
 const PAD = 2;
 function pieceBox(p) {
